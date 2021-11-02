@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/amwa/AndroidStudioProjects/CafeMenu/app/src/main/res/drawable/ic_action_more_horiz.xml" value="0.22552083333333334" />
+        <entry key="..\:/Users/amwa/AndroidStudioProjects/CafeMenu/app/src/main/res/layout/activity_detail.xml" value="0.5" />
         <entry key="..\:/Users/amwa/AndroidStudioProjects/CafeMenu/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/amwa/AndroidStudioProjects/CafeMenu/app/src/main/res/layout/activity_menu.xml" value="0.1816123188405797" />
+        <entry key="..\:/Users/amwa/AndroidStudioProjects/CafeMenu/app/src/main/res/layout/activity_menu.xml" value="0.22" />
+        <entry key="..\:/Users/amwa/AndroidStudioProjects/CafeMenu/app/src/main/res/layout/food_item.xml" value="0.5" />
+        <entry key="..\:/Users/amwa/AndroidStudioProjects/CafeMenu/app/src/main/res/menu/menu_item.xml" value="0.22" />
       </map>
     </option>
   </component>

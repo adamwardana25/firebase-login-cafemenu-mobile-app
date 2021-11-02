@@ -11,7 +11,8 @@
         android:theme="@style/Theme.CafeMenu">
         <activity
             android:name=".DetailActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".MenuActivity"/>
         <activity
             android:name=".MenuActivity"
             android:exported="true" />
