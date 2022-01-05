@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "452386262053",
+    "project_id": "cafemenu-e9a7b",
+    "storage_bucket": "cafemenu-e9a7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452386262053:android:1fa7cc449a9888a01043cc",
+        "android_client_info": {
+          "package_name": "com.example.cafemenu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452386262053-51s5d2j7u20je1k8aacf1cdfud09tbbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfVeEOjIufV4px5OrjpWJB52p514zG8SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452386262053-51s5d2j7u20je1k8aacf1cdfud09tbbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

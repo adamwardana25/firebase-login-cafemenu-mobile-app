@@ -10,9 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CafeMenu">
         <activity
+            android:name=".CreateAccountActivity"
+            android:exported="true" />
+        <activity
             android:name=".DetailActivity"
             android:exported="true"
-            android:parentActivityName=".MenuActivity"/>
+            android:parentActivityName=".MenuActivity" />
         <activity
             android:name=".MenuActivity"
             android:exported="true" />

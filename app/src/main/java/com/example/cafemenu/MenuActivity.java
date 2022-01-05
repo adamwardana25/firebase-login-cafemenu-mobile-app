@@ -12,6 +12,8 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.ArrayList;
 
 public class MenuActivity extends AppCompatActivity {
@@ -22,11 +24,23 @@ public class MenuActivity extends AppCompatActivity {
         setContentView(R.layout.activity_menu);
         getSupportActionBar().setTitle("Cafe Menu");
 
-        ArrayList<Food> data = FoodData.getData(getApplicationContext());
+        Database database = new Database(getApplicationContext());
+
+        ArrayList<com.example.cafemenu.Food> data = (ArrayList<Food>) database.getFoodList(getApplicationContext());
         RecyclerView recyclerView = findViewById(R.id.list_item_view);
         FoodsAdapter adapter = new FoodsAdapter(data);
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+    }
+
+    public  void masukanData(){
+        Database database = new Database(getApplicationContext());
+        ArrayList<com.example.cafemenu.Food> data = com.example.cafemenu.FoodData.getData(getApplicationContext());
+
+        for (Food food: data) {
+            database.tambahData(food);
+        }
+
     }
 
     @Override
@@ -40,9 +54,13 @@ public class MenuActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.logout_item:
+                FirebaseAuth.getInstance().signOut();
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
                 this.finish();
+                break;
+            case R.id.tambahdata:
+                masukanData();
                 break;
             default:
         }
